@@ -42,7 +42,7 @@ class InsetTests: XCTestCase {
 
     func testInsettingMaxXMinY() {
         XCTAssertEqual(
-            rect.insetBy(maxX: 5, minY: 10),
+            rect.insetBy(minY: 10, maxX: 5),
             CGRect(x: 1, y: 12, width: 15, height: 30))
     }
 
@@ -151,7 +151,7 @@ class InsetPlatformTests: InsetTests {
 
     func testInsettingBottomLeft() {
         XCTAssertEqual(
-            rect.insetBy(bottom: 10, left: 5),
+            rect.insetBy(left: 5, bottom: 10),
             CGRect(x: 6, y: 2, width: 15, height: 30))
     }
 
@@ -195,21 +195,6 @@ class MutatingInsetTests: XCTestCase {
 
     var rect = CGRect(x: 1, y: 2, width: 20, height: 40)
 
-    func testInsetting() {
-        rect.insetInPlace(5)
-        XCTAssertEqual(rect, CGRect(x: 6, y: 7, width: 10, height: 30))
-    }
-
-    func testInsettingDx() {
-        rect.insetInPlace(dx: 5)
-        XCTAssertEqual(rect, CGRect(x: 6, y: 2, width: 10, height: 40))
-    }
-
-    func testInsettingDy() {
-        rect.insetInPlace(dy: 5)
-        XCTAssertEqual(rect, CGRect(x: 1, y: 7, width: 20, height: 30))
-    }
-
     func testInsettingMinXMinYMaxXMaxY() {
         rect.insetInPlace(minX: 5, minY: 10, maxX: 3, maxY: 7)
         XCTAssertEqual(rect, CGRect(x: 6, y: 12, width: 12, height: 23))
@@ -236,7 +221,7 @@ class MutatingInsetTests: XCTestCase {
     }
 
     func testInsettingMaxXMinY() {
-        rect.insetInPlace(maxX: 5, minY: 10)
+        rect.insetInPlace(minY: 10, maxX: 5)
         XCTAssertEqual(rect, CGRect(x: 1, y: 12, width: 15, height: 30))
     }
 
@@ -338,7 +323,7 @@ class MutatingInsetPlatformTests: MutatingInsetTests {
     }
 
     func testInsettingBottomLeft() {
-        rect.insetInPlace(bottom: 10, left: 5)
+        rect.insetInPlace(left: 5, bottom: 10)
         XCTAssertEqual(rect, CGRect(x: 6, y: 2, width: 15, height: 30))
     }
 

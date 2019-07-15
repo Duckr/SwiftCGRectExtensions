@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24091C0F1BA1EFCF00980A3E /* DescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24091C0E1BA1EFCF00980A3E /* DescriptionTests.swift */; settings = {ASSET_TAGS = (); }; };
-		24091C101BA1F02500980A3E /* DescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24091C0E1BA1EFCF00980A3E /* DescriptionTests.swift */; settings = {ASSET_TAGS = (); }; };
+		24091C0F1BA1EFCF00980A3E /* DescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24091C0E1BA1EFCF00980A3E /* DescriptionTests.swift */; };
+		24091C101BA1F02500980A3E /* DescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24091C0E1BA1EFCF00980A3E /* DescriptionTests.swift */; };
 		242C641319D5C78A00D51D9F /* InsetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C641219D5C78A00D51D9F /* InsetTests.swift */; };
 		242C641519D5CCAD00D51D9F /* ExtendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C641419D5CCAD00D51D9F /* ExtendTests.swift */; };
 		242C642019D5CF5100D51D9F /* CGRectExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 242C641F19D5CF5100D51D9F /* CGRectExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -308,6 +308,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 247BBDEE19D4A89F00A782E2;
@@ -544,6 +545,7 @@
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -582,6 +584,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -602,6 +605,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.nschum.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CGRectExtensions;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -620,6 +624,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.nschum.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CGRectExtensions;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
